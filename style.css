@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	position: relative;
+	list-style: none;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card{
+	width: 200px;
+	height: 250px;
+	margin-bottom: 20px;
+	background-color: rgb(181, 138, 221);
+	border-radius: 15px;
+	border: 1px solid #000;
+	transition: background-color .3s ease;
+	font-size: 0;
+}
+
+.card:not(:nth-child(4n)){
+	margin-right: 20px;
+}
+
+.is_active{
+	background-color: pink;
+	padding-top: 12%;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.blocked{
+	pointer-events: none;
+}
+
+.btn{
+	position: absolute;
+	width: 400px;
+	padding: 20px 0;
+	background-color: blue;
+	border: none;
+	border-radius: 20px;
+	top: 500px;
+	left: 800px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+	display: none;
+}
